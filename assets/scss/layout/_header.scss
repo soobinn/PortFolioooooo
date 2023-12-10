@@ -1,0 +1,83 @@
+header {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+
+    nav {
+        height: 100px;
+        width: 100%;
+        padding: 0px 80px;
+
+        @include desktop {
+            padding: 0px 20px;
+        }
+        @include tablet {
+            height: 80px;
+        }
+        @include mobile {
+            padding: 0px 10px;
+        }
+    }
+    .nav-list {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        @include mobile {
+            gap: 0;
+        }
+    }
+    .nav-item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            font-size: 25px;
+            letter-spacing: 1.5spx;
+            font-family: "ZephyrRegular", sans-serif;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 100px;
+            justify-content: center;
+            @include mobile {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .btn-menu {
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        .circle {
+            position: absolute;
+            display: block;
+            width: 5px;
+            height: 5px;
+            background-color: #fff;
+            border-radius: 50%;
+
+            &:nth-child(1) {
+                left: 0;
+                top: 0;
+            }
+            &:nth-child(2) {
+                right: 0;
+                top: 0;
+            }
+            &:nth-child(3) {
+                bottom: 0;
+                left: 0;
+            }
+            &:nth-child(4) {
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}

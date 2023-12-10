@@ -1,0 +1,24 @@
+footer {
+    height: 80px;
+    padding: 0 80px;
+    @include desktop {
+        padding: 0 20px;
+    }
+
+    @include mobile {
+        height: 50px;
+    }
+    .inner {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        height: 100%;
+        padding: 0;
+
+        span {
+            @include mobile {
+                font-size: 12px;
+            }
+        }
+    }
+}
