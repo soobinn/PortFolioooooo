@@ -94,24 +94,24 @@ scrollTl.fromTo(
 
 // .sc-project - Poject title up
 
-// $(".sc-project .con-project>a").each(function () {
-//     var linkElement = $(this);
+$(".sc-project .con-project>a").each(function () {
+    var linkElement = $(this);
 
-//     linkElement.hover(
-//         function () {
-//             gsap.to(linkElement.find(".title"), {
-//                 y: -50,
-//                 ease: "power4.easeInOut",
-//             });
-//         },
-//         function () {
-//             gsap.to(linkElement.find(".title"), {
-//                 y: 0,
-//                 ease: "power4.easeInOut",
-//             });
-//         }
-//     );
-// });
+    linkElement.hover(
+        function () {
+            gsap.to(linkElement.find(".title"), {
+                y: -50,
+                ease: "power4.easeInOut",
+            });
+        },
+        function () {
+            gsap.to(linkElement.find(".title"), {
+                y: 0,
+                ease: "power4.easeInOut",
+            });
+        }
+    );
+});
 
 // project content after
 
