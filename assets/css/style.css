@@ -1830,7 +1830,10 @@ body {
   }
 }
 .sc-about .desc .desc2 p {
-  font-size: 25px;
+  font-size: 23px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 @media (max-width: 1200px) {
   .sc-about .desc .desc2 p {

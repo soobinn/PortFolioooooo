@@ -315,7 +315,8 @@ body {
             }
 
             p {
-                font-size: 25px;
+                font-size: 23px;
+                flex: 1;
                 @include desktop {
                     font-size: 18px;
                 }
