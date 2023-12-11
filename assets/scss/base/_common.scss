@@ -55,7 +55,7 @@
 
                     span {
                         transform: translateY(100%);
-                        display: inline-block;
+                        display: block;
                         @include mobile {
                             font-size: 50px;
                         }

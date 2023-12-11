@@ -1084,7 +1084,7 @@ body {
 .loading .text-area .text-group .text-box .text span {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  display: inline-block;
+  display: block;
 }
 @media (max-width: 767px) {
   .loading .text-area .text-group .text-box .text span {
@@ -1787,9 +1787,9 @@ body {
   }
 }
 .sc-about .desc .desc1 p {
-  -webkit-box-flex: 0.8;
-      -ms-flex: 0.8;
-          flex: 0.8;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   font-size: 26px;
   line-height: 40px;
 }
