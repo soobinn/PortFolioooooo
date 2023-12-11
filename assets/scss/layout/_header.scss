@@ -3,12 +3,17 @@ header {
     position: fixed;
     width: 100%;
     z-index: 9;
+    mix-blend-mode: difference;
 
     nav {
         height: 100px;
+        position: relative;
+        z-index: 10;
         width: 100%;
         padding: 0px 80px;
-
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         @include desktop {
             padding: 0px 20px;
         }
@@ -21,10 +26,17 @@ header {
     }
     .nav-list {
         height: 100%;
-        width: 100%;
         display: flex;
         gap: 20px;
         align-items: center;
+        &:nth-child(2) {
+            .nav-item:nth-child(1),
+            .nav-item:nth-child(2) {
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
         @include mobile {
             gap: 0;
         }
@@ -35,9 +47,10 @@ header {
         align-items: center;
         justify-content: center;
         a {
-            font-size: 25px;
+            font-size: 20px;
             letter-spacing: 1.5spx;
             font-family: "ZephyrRegular", sans-serif;
+
             display: flex;
             align-items: center;
             height: 100%;
