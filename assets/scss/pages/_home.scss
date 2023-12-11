@@ -317,7 +317,10 @@ body {
             p {
                 font-size: 25px;
                 @include desktop {
-                    font-size: 14px;
+                    font-size: 18px;
+                }
+                @include tablet {
+                    font-size: 16px;
                 }
                 @include mobile {
                     flex: 1;
