@@ -372,7 +372,9 @@ body {
         .move-item {
             display: flex;
             -webkit-text-stroke-width: 0.5px;
+
             -webkit-text-stroke-color: #fff;
+            color: transparent;
             &:nth-child(2n) {
                 span {
                     font-style: italic;

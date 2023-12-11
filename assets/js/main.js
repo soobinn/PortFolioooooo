@@ -92,6 +92,20 @@ scrollTl.fromTo(
     "a"
 );
 
+function scrollToMenu(menuSelector) {
+    var conHeight = $(menuSelector).offset().top;
+    console.log(menuSelector);
+    $("html, body").animate({ scrollTop: conHeight }, 500);
+}
+$("[data-menu]").each(function () {
+    $(this).click(function (e) {
+        e.preventDefault();
+        var dataValue = $(this).data("menu");
+        scrollToMenu(dataValue);
+        $(this).addClass("on").siblings().removeClass("on");
+    });
+});
+
 // .sc-project - Poject title up
 
 $(".sc-project .con-project>a").each(function () {
