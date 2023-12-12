@@ -16,7 +16,7 @@ body {
             top: 50%;
             transform: translateY(-40%);
             @include mobile {
-                gap: 0;
+                gap: 0;d
                 flex-direction: column;
             }
 
@@ -280,7 +280,6 @@ body {
         display: flex;
         flex-direction: column;
         gap: 50px;
-
         padding: 50px 0px;
         .desc1 {
             display: flex;
