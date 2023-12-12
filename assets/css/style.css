@@ -1772,6 +1772,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 50px;
+  padding: 50px 0px;
 }
 .sc-about .desc .desc1 {
   display: -webkit-box;
@@ -1787,9 +1788,6 @@ body {
   }
 }
 .sc-about .desc .desc1 p {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   font-size: 26px;
   line-height: 40px;
 }
@@ -1804,11 +1802,6 @@ body {
   .sc-about .desc .desc1 p {
     font-size: 17px;
     line-height: 25px;
-  }
-}
-@media (max-width: 1200px) {
-  .sc-about .desc .desc1 .ico {
-    display: none;
   }
 }
 .sc-about .desc .desc2 {

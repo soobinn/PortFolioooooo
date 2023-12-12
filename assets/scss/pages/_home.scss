@@ -281,6 +281,7 @@ body {
         flex-direction: column;
         gap: 50px;
 
+        padding: 50px 0px;
         .desc1 {
             display: flex;
             align-items: center;
@@ -288,7 +289,6 @@ body {
                 padding-top: 50px;
             }
             p {
-                flex: 1;
                 font-size: 26px;
                 line-height: 40px;
                 @include desktop {
@@ -297,12 +297,6 @@ body {
                 @include mobile {
                     font-size: 17px;
                     line-height: 25px;
-                }
-            }
-
-            .ico {
-                @include desktop {
-                    display: none;
                 }
             }
         }
